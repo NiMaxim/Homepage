@@ -488,7 +488,7 @@ textarea {
 /*INTRO STYLES*/
 
 .intro {
-    height: 100vh;
+    height: 120vh;
     background: url(../img/intro-bg.jpg) no-repeat center;
     background-size: cover;
     padding-top: 188px;
