@@ -438,7 +438,7 @@ textarea {
      flex-wrap: wrap;
      align-items: center;
      justify-content: space-between;
-     padding: 0 70px;
+     padding: 0 50px;
 }
 
 .header__menu {
@@ -489,10 +489,11 @@ textarea {
     background: #1d66c0;
 }
 
+
 /*INTRO STYLES*/
 
 .intro {
-    height: 120vh;
+    min-height: 120vh;
     background: url(../img/intro-bg.jpg) no-repeat center;
     background-size: cover;
     padding-top: 188px;
