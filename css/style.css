@@ -417,6 +417,11 @@ textarea {
        color: #000000;
   }
 
+  img {
+      max-width: 100%;
+      height: auto;
+  }
+
   *, *::before, *::after {
        box-sizing: inherit;
   }
@@ -493,10 +498,11 @@ textarea {
 /*INTRO STYLES*/
 
 .intro {
-    min-height: 120vh;
+    height: 120vh;
     background: url(../img/intro-bg.jpg) no-repeat center;
     background-size: cover;
-    padding-top: 188px;
+    padding-top: 120px;
+    margin-bottom: -3vh;
 }
 
 .intro__tittle {
@@ -504,7 +510,7 @@ textarea {
      font-size: 36px;
      line-height: 45px;
      text-align: center;
-     margin-bottom: 30px;
+     margin-bottom: 15px;
 }
 
 .intro__subtittle {
@@ -513,7 +519,7 @@ textarea {
      line-height: 27px;
      text-align: center;
      color: #929292;
-     margin-bottom: 33px;
+     margin-bottom: 15px;
 }
 
 .intro__buttons {
@@ -548,4 +554,69 @@ textarea {
      border-radius: 25px;
      background-color: white;
      color: #0F7BFF;
+}
+
+
+figure img {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 17%;
+    height: 17%;
+
+}
+
+/*FEAUTURES*/
+
+.benefits__wrap {
+    max-width: 1644px;
+    margin: 0 auto;
+}
+
+.feautures__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    background-color: #F5FCFD;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-top: 165px;
+    padding-bottom: 180px;
+}
+
+.feautures__card {
+    grid-column: span 1;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 66, 148, 0.08);
+    border-radius: 5px;
+    padding: 35px 10px 30px 10px;
+}
+
+.feautures__card:nth-child(2) {
+    margin-top: 50px;
+    margin-bottom: -50px;
+}
+
+.feautures__card-icon {
+    max-width: 70px;
+    margin-bottom: 25px;
+}
+
+.feautures__card-tittle {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.feautures__card-desc {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.feautures__card-cont {
+    text-align: center;
 }
