@@ -485,6 +485,10 @@ textarea {
      border: 0;
 }
 
+.signup__btn:hover, .signup__btn:focus, .signup__btn:active {
+    background: #1d66c0;
+}
+
 /*INTRO STYLES*/
 
 .intro {
