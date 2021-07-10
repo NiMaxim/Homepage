@@ -517,6 +517,18 @@ img {
   margin: 0 auto;
 }
 
+.download__btn:hover,
+.download__btn:focus,
+.download__btn:active {
+  background: #1d66c0;
+}
+
+.freetrail__btn:hover,
+.freetrail__btn:focus,
+.freetrail__btn:active {
+  background: #e9f3f8;
+}
+
 /* HEADER STYLES*/
 
 .header {
@@ -665,8 +677,8 @@ img {
   background-color: #f5fcfd;
   padding-left: 160px;
   padding-right: 160px;
-  padding-top: 165px;
-  padding-bottom: 180px;
+  padding-top: 100px;
+  padding-bottom: 130px;
   margin-bottom: 60px;
 }
 
@@ -783,6 +795,7 @@ img {
   padding-left: 100px;
   padding-right: 100px;
   padding-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .hdiw__card {
@@ -817,10 +830,150 @@ img {
 
 /*НАРИСОВАТЬ ПУНКТИРНУЮ ЛИНИЮ*/
 
-.hdiw__card:first-child {
-  border-right: 2px dashed #0f7bff transparent;
+/*Rates*/
+
+.rates__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 100px;
 }
 
-.hdiw__card:last-child {
-  border-left: 2px dashed #0f7bff;
+.plan {
+  grid-column: span 1;
+  padding: 50px auto;
+  align-self: center;
+}
+
+.plan__tittle {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+.plan__desc {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 40px;
+}
+
+.monthly__btn {
+  position: relative;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+  background: #0f7bff;
+  border-radius: 25px 0px 0px 25px;
+  padding: 16px 42px;
+  border: 0;
+}
+
+.monthly__btn:hover,
+.monthly__btn:focus,
+.monthly__btn:active {
+  background: #1d66c0;
+}
+
+.yearly__btn {
+  position: relative;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #0063dd;
+  background: #ffffff;
+  border: 3px solid #0f7bff;
+  box-sizing: border-box;
+  border-radius: 0px 25px 25px 0px;
+  padding: 13px 42px;
+}
+
+.yearly__btn:hover,
+.yearly__btn:focus,
+.yearly__btn:active {
+  background: #e9f3f8;
+}
+
+.rates__card-rate {
+  grid-column: span 1;
+  padding: 39px 30px 46px 30px;
+  box-shadow: 0px 4px 20px rgba(0, 36, 80, 0.08);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.rates__card-icon {
+  max-width: 114px;
+  margin-bottom: 20px;
+}
+
+.rates__card-tittle {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  border-bottom: 2px solid #e9f3f8;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.rates__card-desc {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 184%;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #0f7bff;
+  margin-bottom: 20px;
+}
+
+.premium__btn {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  padding: 15px 51px;
+  background: #0f7bff;
+  border-radius: 25px;
+  border: 0;
+}
+
+.premium__btn:hover,
+.premium__btn:focus,
+.premium__btn:active {
+  background: #1d66c0;
+}
+
+.standart__btn {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  background: #ffffff;
+  border: 2px solid #0f7bff;
+  color: #0f7bff;
+  box-sizing: border-box;
+  border-radius: 25px;
+  padding: 15px 51px;
+}
+
+.standart__btn:hover,
+.standart__btn:focus,
+.standart__btn:active {
+  background: #e9f3f8;
 }
