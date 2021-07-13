@@ -663,15 +663,30 @@ img {
   color: #0f7bff;
 }
 
-/*figure img {
-    position: relative;
-    display: block;
-    margin: 0 auto;
-    width: 17%;
-    height: 17%;
-
+.devices {
+  display: flex;
+  justify-content: center;
+  width: 570px;
+  height: 398px;
+  overflow: hidden;
+  margin: 0 380px;
+  margin-top: 7px;
 }
-*/
+
+.phone1 {
+  padding-top: 55px;
+  margin-right: -60px;
+}
+
+.phone2 {
+  z-index: 1;
+}
+
+.phone3 {
+  padding-top: 64px;
+  margin-left: -75px;
+  z-index: 0;
+}
 
 /*FEAUTURES*/
 
