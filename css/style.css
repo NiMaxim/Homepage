@@ -565,8 +565,18 @@ img {
   color: #929292;
 }
 
+.header__link:hover,
+.header__link:focus {
+  color: #000000;
+}
+
 .header__item:first-child .header__link:first-child {
   color: #0f7cff;
+}
+
+.header__item:first-child .header__link:first-child:hover,
+.header__item:first-child .header__link:first-child:focus {
+  color: #0063dd;
 }
 
 .header__item:last-child {
