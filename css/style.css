@@ -883,7 +883,21 @@ img {
   text-align: center;
 }
 
-/*НАРИСОВАТЬ ПУНКТИРНУЮ ЛИНИЮ*/
+.dots-left {
+  position: absolute;
+  width: 280px;
+  border-bottom: 2px dashed #0f7bff;
+  left: 338px;
+  top: 2512px;
+}
+
+.dots-right {
+  position: absolute;
+  width: 280px;
+  border-bottom: 2px dashed #0f7bff;
+  right: 338px;
+  top: 2512px;
+}
 
 /*Rates*/
 
@@ -1090,6 +1104,11 @@ img {
   font-size: 16px;
   line-height: 20px;
   color: #999999;
+}
+
+.pagination {
+  margin-top: 15px;
+  margin-left: 5px;
 }
 
 /*Last News*/
