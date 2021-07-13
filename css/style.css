@@ -1028,7 +1028,6 @@ img {
 .trustbypeople__cards {
   display: flex;
   justify-content: flex-start;
-  margin: 0 -5px;
 }
 .trustbypeople__card {
   background: #ffffff;
