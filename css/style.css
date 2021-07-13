@@ -688,6 +688,13 @@ img {
   z-index: 0;
 }
 
+.scroldown {
+  position: absolute;
+  top: 670px;
+  left: 615px;
+  z-index: 1;
+}
+
 /*FEAUTURES*/
 
 .feautures__wrap {
@@ -1358,6 +1365,6 @@ img {
   color: #d2e9f5;
 }
 
-.scrollup__btn {
+.scrolup__btn {
   border-radius: 250px;
 }
