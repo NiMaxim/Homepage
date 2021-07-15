@@ -496,6 +496,7 @@ body {
   font-weight: normal;
   color: #000000;
   scroll-behavior: smooth;
+  display: flex;
 }
 
 img {
@@ -511,7 +512,7 @@ img {
 
 .wrapper {
   max-width: 1920px;
-  margin: 0 auto;
+  margin: 0 40px;
 }
 
 .download__btn:hover,
@@ -703,18 +704,12 @@ img {
 
 /*FEAUTURES*/
 
-.feautures__wrap {
-  max-width: 1644px;
-  margin: 0 auto;
-}
-
 .feautures__cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 30px;
   background-color: #f5fcfd;
-  padding-left: 160px;
-  padding-right: 160px;
+  padding: 0 90px;
   padding-top: 100px;
   padding-bottom: 130px;
   margin-bottom: 60px;
@@ -1435,3 +1430,17 @@ img {
 }
 
 
+@media (max-width: 500px) {
+  .header, .header__menu, .intro, .intro__buttons, .devices, .feautures__cards, .abouts, .hdiw, .hdiw__cards, .rates, .rates__card-rate, .trustbypeople, .lastnews, .lastnews__cards, .freetrail, .freetrail__period, .subscribe, .footer, .footer__menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px 0;
+    
+  }
+
+  .devices {
+    visibility: hidden;
+  }
+}
