@@ -523,12 +523,15 @@ img {
 .download__btn:focus,
 .download__btn:active {
   background: #1d66c0;
+  text-decoration: none;
+  outline: none;
 }
 
 .freetrail__btn:hover,
 .freetrail__btn:focus,
 .freetrail__btn:active {
   background: #e9f3f8;
+  outline: none;
 }
 
 /* HEADER STYLES*/
@@ -570,6 +573,8 @@ img {
 .header__link:hover,
 .header__link:focus {
   color: #000000;
+  text-decoration: none;
+  outline: none;
 }
 
 .header__item:first-child .header__link:first-child {
@@ -579,6 +584,7 @@ img {
 .header__item:first-child .header__link:first-child:hover,
 .header__item:first-child .header__link:first-child:focus {
   color: #0063dd;
+  text-decoration: none;
 }
 
 .header__item:last-child {
@@ -602,6 +608,8 @@ img {
 .signup__btn:focus,
 .signup__btn:active {
   background: #1d66c0;
+  text-decoration: none;
+  outline: none;
 }
 
 /*INTRO STYLES*/
@@ -795,6 +803,8 @@ img {
 .about__more:hover,
 .about__more:focus {
   opacity: 0.65;
+  text-decoration: none;
+  outline: none;
 }
 
 .about__pic {
@@ -950,6 +960,7 @@ img {
 .monthly__btn:focus,
 .monthly__btn:active {
   background: #1d66c0;
+  outline: none;
 }
 
 .yearly__btn {
@@ -971,6 +982,7 @@ img {
 .yearly__btn:focus,
 .yearly__btn:active {
   background: #e9f3f8;
+  outline: none;
 }
 
 .period__btns {
@@ -1031,6 +1043,7 @@ img {
 .premium__btn:focus,
 .premium__btn:active {
   background: #1d66c0;
+  outline: none;
 }
 
 .standart__btn {
@@ -1051,6 +1064,7 @@ img {
 .standart__btn:focus,
 .standart__btn:active {
   background: #e9f3f8;
+  outline: none;
 }
 
 /*Trusted By People*/
@@ -1073,11 +1087,16 @@ img {
   margin-bottom: 40px;
 }
 
-.trustbypeople__cards {
+.trust__card-tittle {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 5px;
 }
-.trustbypeople__card {
+
+.trust__card {
   background: #ffffff;
   box-shadow: 0px 4px 20px rgba(0, 70, 156, 0.08);
   border-radius: 5px;
@@ -1085,14 +1104,7 @@ img {
   margin: 0 5px;
 }
 
-.trustbypeople__card-tittle {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
-  margin-bottom: 5px;
-}
-
-.trustbypeople__card-subtittle {
+.trust__card-subtittle {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
@@ -1100,7 +1112,7 @@ img {
   color: #999999;
 }
 
-.trustbypeople__card-desc {
+.trust__card-desc {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -1108,9 +1120,38 @@ img {
   color: #999999;
 }
 
-.pagination {
-  margin-top: 15px;
-  margin-left: 5px;
+.carousel {
+  width: 100%;
+}
+
+.carousel-inner {
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.carousel-item {
+  width: 50%;
+}
+
+.carousel-indicators {
+  position: relative;
+  justify-content: flex-start;
+  left: -15%;
+}
+
+.carousel-indicators li {
+  width: 12px;
+  height: 12px;
+  background: #f5fcfd;
+  border: 2px solid #0063dd;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.carousel-indicators li:hover,
+.carousel-indicators li:focus,
+.carousel-indicators li:active {
+  background: #0063dd;
 }
 
 /*Last News*/
@@ -1220,6 +1261,8 @@ img {
 .news-1-continue:hover,
 .news-1-continue:focus {
   opacity: 0.65;
+  text-decoration: none;
+  outline: none;
 }
 
 /*Free Trail*/
@@ -1265,6 +1308,7 @@ img {
 .getstarted__btn:focus,
 .getstarted__btn:active {
   background: #1d66c0;
+  outline: none;
 }
 
 .arrow-white {
@@ -1326,6 +1370,7 @@ img {
 .subsctibe__btn:hover,
 .subsctibe__btn:focus {
   background: #e9f3f8;
+  outline: none;
 }
 
 /*Footer*/
@@ -1384,6 +1429,8 @@ img {
 .footer__link:hover,
 .footer__link:focus {
   color: #d2e9f5;
+  text-decoration: none;
+  outline: none;
 }
 
 .scrolup__btn {
