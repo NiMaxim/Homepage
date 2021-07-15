@@ -674,7 +674,7 @@ img {
   width: 570px;
   height: 398px;
   overflow: hidden;
-  margin: 0 380px;
+  margin: 0 auto;
   margin-top: 7px;
 }
 
@@ -694,10 +694,11 @@ img {
 }
 
 .scroldown {
-  position: absolute;
-  top: 670px;
-  left: 615px;
+  position: relative;
+  text-align: center;
   z-index: 1;
+  margin: -30px auto;
+  margin-top: -60px;
 }
 
 /*FEAUTURES*/
@@ -1432,3 +1433,5 @@ img {
 .scrolup__btn {
   border-radius: 250px;
 }
+
+
