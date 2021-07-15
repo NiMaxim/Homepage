@@ -510,11 +510,6 @@ img {
 }
 
 .wrapper {
-  max-width: 1644px;
-  margin: 0 auto;
-}
-
-.wrapper__full {
   max-width: 1920px;
   margin: 0 auto;
 }
@@ -1222,11 +1217,11 @@ img {
 .flex-column {
   flex-direction: column;
   align-items: flex-start;
-  width: 700px;
+  max-width: 600px;
 }
 
 .news-1 {
-  width: 560px;
+  max-width: 560px;
 }
 
 .news-1 .news__cont {
@@ -1247,6 +1242,7 @@ img {
 .news-2-pic,
 .news-3-pic,
 .news-4-pic {
+  max-width: 100%;
   padding-top: 5px;
   margin-right: 15px;
 }
