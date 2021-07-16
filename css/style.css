@@ -512,7 +512,7 @@ img {
 
 .wrapper {
   max-width: 1920px;
-  margin: 0 40px;
+  margin: 0 20px;
 }
 
 .download__btn:hover,
@@ -561,6 +561,10 @@ img {
   padding-bottom: 15px;
 }
 
+.header__item:last-child {
+  margin-right: 0;
+}
+
 .header__link {
   text-decoration: none;
   color: #929292;
@@ -581,10 +585,6 @@ img {
 .header__item:first-child .header__link:first-child:focus {
   color: #0063dd;
   text-decoration: none;
-}
-
-.header__item:last-child {
-  margin-right: 0;
 }
 
 .signup__btn {
@@ -611,6 +611,8 @@ img {
 /*INTRO STYLES*/
 
 .intro {
+  display: flex;
+  justify-content: center;
   height: 120vh;
   background: url(../img/intro-bg.jpg) no-repeat center;
   background-size: cover;
@@ -627,6 +629,7 @@ img {
 }
 
 .intro__subtittle {
+  max-width: 700px;
   font-weight: normal;
   font-size: 16px;
   line-height: 27px;
@@ -672,8 +675,8 @@ img {
 .devices {
   display: flex;
   justify-content: center;
-  width: 570px;
-  height: 398px;
+  max-width: 570px;
+  max-height: 398px;
   overflow: hidden;
   margin: 0 auto;
   margin-top: 7px;
@@ -1062,7 +1065,8 @@ img {
 
 .trustbypeople {
   background: url(../img/trust-bg.jpg) no-repeat;
-  background-size: contain;
+  background-color: #f5fcfd;
+  background-size: cover;
   height: 68vh;
   margin-bottom: 100px;
 }
@@ -1071,6 +1075,7 @@ img {
   padding-top: 40px;
   padding-left: 600px;
 }
+
 .trustbypeople__tittle {
   font-weight: bold;
   font-size: 32px;
@@ -1265,7 +1270,7 @@ img {
 
 .freetrail__period {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 100px 250px;
 }
@@ -1429,18 +1434,685 @@ img {
   border-radius: 250px;
 }
 
+/*Adaptive*/
 
-@media (max-width: 500px) {
-  .header, .header__menu, .intro, .intro__buttons, .devices, .feautures__cards, .abouts, .hdiw, .hdiw__cards, .rates, .rates__card-rate, .trustbypeople, .lastnews, .lastnews__cards, .freetrail, .freetrail__period, .subscribe, .footer, .footer__menu {
+@media (max-width: 1200px) {
+  .header,
+  .header__menu,
+  .intro,
+  .intro__buttons,
+  .feautures__cards,
+  .abouts,
+  .hdiw,
+  .hdiw__cards,
+  .rates,
+  .rates__card-rate,
+  .trustbypeople,
+  .lastnews,
+  .lastnews__cards,
+  .freetrail,
+  .freetrail__period,
+  .subscribe,
+  .footer,
+  .footer__menu {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    flex-direction: column;
-    margin: 50px 0;
-    
+    padding: 25px auto;
+    max-width: 1190px;
+  }
+
+  .header__menu {
+    margin-left: 80px;
+  }
+
+  .header__logo {
+    max-width: 120px;
+    max-height: 80px;
+  }
+
+  .intro {
+    padding-top: 150px;
+    height: 12%;
   }
 
   .devices {
-    visibility: hidden;
+    max-width: 450px;
+    max-height: 315px;
+  }
+
+  .feautures__cards {
+    flex-direction: row;
+  }
+
+  .feautures__card {
+    max-width: 30%;
+  }
+
+  .abouts {
+    margin-bottom: 0;
+  }
+
+  .abouts__about:nth-child(2) .about__thumb {
+    max-width: 170%;
+  }
+
+  .hdiw {
+    padding: 50px;
+  }
+
+  .hdiw__cards {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin: 0;
+  }
+
+  .rates__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    padding: 80px 80px;
+  }
+
+  .rates__card-rate {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .trustbypeople {
+    margin-bottom: 40px;
+  }
+
+  .trustbypeople__block {
+    padding-top: 40px;
+    padding-left: 500px;
+  }
+
+  .carousel-inner {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .carousel-item {
+    width: 70%;
+  }
+
+  .freetrail__period {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 100px 50px;
+  }
+
+  .freetrail__go {
+    margin-left: 100px;
+  }
+
+  .lastnews__desc {
+    padding: 0 100px;
+    margin-bottom: 41px;
+  }
+
+  .lastnews {
+    margin-bottom: 50px;
+  }
+
+  .news-1 {
+    margin-bottom: 20px;
+  }
+  .news__cont {
+    padding: 0;
+  }
+
+  .subscribe__info {
+    padding: 70px 100px;
+  }
+
+  .footer {
+    padding: 50px 0;
+    margin: 0;
+  }
+
+  .footer__list {
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 991px) {
+  .header,
+  .header__menu,
+  .intro,
+  .intro__buttons,
+  .feautures__cards,
+  .abouts,
+  .hdiw,
+  .hdiw__cards,
+  .rates,
+  .rates__card-rate,
+  .trustbypeople,
+  .lastnews,
+  .lastnews__cards,
+  .freetrail,
+  .freetrail__period,
+  .subscribe,
+  .footer,
+  .footer__menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 25px auto;
+    max-width: 950px;
+  }
+
+  .header__wrapper {
+    padding: 0;
+  }
+
+  .header__menu {
+    max-width: 700px;
+  }
+
+  .header__item {
+    margin-right: 20px;
+  }
+
+  .header__logo {
+    max-width: 120px;
+    max-height: 80;
+  }
+
+  .intro {
+    padding-top: 150px;
+    height: 12%;
+  }
+
+  .devices {
+    max-width: 450px;
+    max-height: 325px;
+    margin-top: 31px;
+  }
+
+  .feautures__cards {
+    flex-direction: row;
+  }
+
+  .feautures__card {
+    max-width: 30%;
+  }
+
+  .abouts {
+    margin-bottom: 0;
+  }
+
+  .abouts__about:nth-child(2) .about__thumb {
+    max-width: 150%;
+  }
+
+  .about__pic:last-child {
+    padding: 20px 130px 70px 16px;
+    margin-bottom: -100px;
+  }
+
+  .hdiw {
+    padding: 50px;
+  }
+
+  .hdiw__cards {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin: 0;
+  }
+
+  .rates__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    padding: 80px 80px;
+  }
+
+  .rates__card-rate {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .trustbypeople {
+    margin-bottom: 40px;
+  }
+
+  .trustbypeople__block {
+    padding-top: 40px;
+    padding-left: 520px;
+  }
+
+  .carousel-inner {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .carousel-item {
+    width: 70%;
+  }
+
+  .freetrail__period {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 100px 50px;
+  }
+
+  .freetrail__go {
+    margin-left: 100px;
+  }
+
+  .lastnews__desc {
+    padding: 0 100px;
+    margin-bottom: 41px;
+  }
+
+  .lastnews {
+    margin-bottom: 25px;
+  }
+
+  .news-1 {
+    margin-bottom: 20px;
+  }
+  .news__cont {
+    padding: 0;
+  }
+
+  .footer {
+    padding: 50px 0;
+    margin: 0;
+  }
+
+  .copyright {
+    width: 30%;
+  }
+
+  .footer__list {
+    margin-left: 50px;
+    max-width: 40%;
+  }
+}
+
+@media (max-width: 767px) {
+  .header,
+  .header__menu,
+  .intro,
+  .intro__buttons,
+  .feautures__cards,
+  .abouts,
+  .hdiw,
+  .hdiw__cards,
+  .rates,
+  .rates__card-rate,
+  .trustbypeople,
+  .lastnews,
+  .lastnews__cards,
+  .freetrail,
+  .freetrail__period,
+  .subscribe,
+  .footer,
+  .footer__menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 25px auto;
+    max-width: 740px;
+  }
+
+  .header__wrapper {
+    padding: 0;
+  }
+
+  .header__menu {
+    max-width: 700px;
+  }
+
+  .header__item {
+    margin-right: 20px;
+  }
+
+  .header__logo {
+    max-width: 120px;
+    max-height: 80px;
+  }
+
+  .intro {
+    padding-top: 120px;
+    height: 12%;
+  }
+
+  .devices {
+    max-width: 450px;
+    max-height: 325px;
+    margin-top: 31px;
+  }
+
+  .feautures__cards {
+    flex-direction: column;
+  }
+
+  .feautures__card {
+    max-width: 100%;
+  }
+
+  .feautures__card:nth-child(2) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .abouts {
+    margin-bottom: 0;
+    flex-direction: column;
+  }
+
+  .abouts__about {
+    padding: 0 20px;
+  }
+
+  .abouts__about:nth-child(2) .about__thumb {
+    max-width: 150%;
+  }
+
+  .about__pic:last-child {
+    padding: 20px 130px 70px 16px;
+    margin-bottom: -100px;
+  }
+
+  .hdiw {
+    padding: 50px;
+  }
+
+  .hdiw__cards {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+
+  .rates__cards {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0;
+    max-width: 60%;
+  }
+
+  .rates .wrapper,
+  .period__btns {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .plan {
+    margin-bottom: 20px;
+  }
+  .rates__card-rate {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .trustbypeople {
+    background-size: 250%;
+    height: 500px;
+  }
+
+  .trustbypeople__block {
+    color: white;
+    padding-top: 50px;
+    padding-left: 0;
+    justify-content: flex-start;
+  }
+
+  /*ПОЧЕМУ-ТО ИСЧЕЗАЕТ КАРУСЕЛЬ ТВИТОВ*/
+
+  .freetrail__period {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 100px 50px;
+  }
+
+  .freetrail__go {
+    margin-left: 100px;
+  }
+
+  .lastnews__desc {
+    padding: 0 100px;
+    margin-bottom: 41px;
+  }
+
+  .lastnews {
+    margin-bottom: 25px;
+  }
+
+  .news-1 {
+    margin-bottom: 20px;
+  }
+  .news__cont {
+    padding: 0;
+  }
+
+  .footer {
+    padding: 50px 0;
+    margin: 0;
+  }
+
+  .copyright {
+    width: 30%;
+  }
+
+  .footer__list {
+    margin-left: 50px;
+    max-width: 40%;
+  }
+}
+
+@media (max-width: 575px) {
+  .header,
+  .header__menu,
+  .intro,
+  .intro__buttons,
+  .feautures__cards,
+  .abouts,
+  .hdiw,
+  .hdiw__cards,
+  .rates,
+  .rates__card-rate,
+  .trustbypeople,
+  .lastnews,
+  .lastnews__cards,
+  .freetrail,
+  .freetrail__period,
+  .subscribe,
+  .footer,
+  .footer__menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 250px auto;
+    max-width: 555px;
+  }
+
+  .header__wrapper {
+    width: 500px;
+    padding: 0;
+  }
+
+  .header__menu {
+    max-width: 380px;
+  }
+
+  .header__item {
+    margin-right: 5px;
+  }
+
+  .signup__btn {
+    max-width: 70px;
+    max-height: 50px;
+  }
+
+  .header__logo {
+    max-width: 80px;
+    max-height: 50px;
+  }
+
+  .intro {
+    padding-top: 95px;
+    height: 11%;
+  }
+
+  .intro .wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .devices {
+    max-width: 450px;
+    max-height: 325px;
+    margin-top: 220px;
+  }
+
+  .feautures__cards {
+    flex-direction: column;
+  }
+
+  .feautures__card {
+    max-width: 100%;
+  }
+
+  .feautures__card:nth-child(2) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .abouts {
+    margin-bottom: 0;
+    flex-direction: column;
+  }
+
+  .abouts__about {
+    padding: 0 20px;
+  }
+
+  .abouts__about:nth-child(2) .about__thumb {
+    max-width: 200%;
+  }
+
+  .about__pic:last-child {
+    padding: 5px 60px 16px;
+    margin-bottom: -100px;
+  }
+
+  .hdiw {
+    padding: 50px;
+  }
+
+  .hdiw__cards {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+
+  .rates__cards {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0;
+    max-width: 60%;
+  }
+
+  .rates .wrapper,
+  .period__btns {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .plan {
+    margin-bottom: 20px;
+  }
+  .rates__card-rate {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .trustbypeople {
+    background-size: 250%;
+    height: 400px;
+  }
+
+  .trustbypeople__block {
+    color: white;
+    padding-top: 50px;
+    padding-left: 0;
+    justify-content: flex-start;
+    width: 400px;
+  }
+
+  /*ПОЧЕМУ-ТО ИСЧЕЗАЕТ КАРУСЕЛЬ ТВИТОВ*/
+
+  .lastnews__desc {
+    padding: 0 100px;
+    margin-bottom: 41px;
+  }
+
+  .lastnews {
+    margin-bottom: 25px;
+  }
+
+  .news-1 {
+    margin-bottom: 20px;
+  }
+  .news__cont {
+    padding: 0;
+  }
+
+  .freetrail__period {
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 80px 35px;
+  }
+
+  .freetrail__info {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .freetrail__go {
+    justify-content: center;
+    margin: 0;
+  }
+
+  .subscribe {
+    padding: 20px 10px;
+    margin-right: 0;
+  }
+
+  .subscribe__info {
+    padding: 20px 10px;
+  }
+
+  .enteremail {
+    padding: 12px 50px 12px 28px;
+  }
+
+  .footer {
+    padding: 50px 0;
+    margin: 0;
+  }
+
+  .copyright {
+    width: 30%;
+  }
+
+  .footer__list {
+    margin-left: 50px;
+    max-width: 40%;
   }
 }
