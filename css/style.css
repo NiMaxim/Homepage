@@ -1939,11 +1939,13 @@ img {
   .header__wrapper {
     justify-content: center;
     width: 540px;
-    padding: 0;
+    padding: 0 20px;
+    
   }
 
   .header__menu {
     max-width: 380px;
+    margin-right: 10px;
   }
 
   .header__item {
