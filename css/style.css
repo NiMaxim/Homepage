@@ -1937,7 +1937,8 @@ img {
   }
 
   .header__wrapper {
-    width: 500px;
+    justify-content: center;
+    width: 540px;
     padding: 0;
   }
 
@@ -2031,6 +2032,7 @@ img {
     display: flex;
     justify-content: center;
     text-align: center;
+    margin-right: 0;
   }
 
   .plan {
